@@ -17,7 +17,7 @@ resource "google_storage_bucket_iam_member" "storage_bucket_iam_member_destinati
 
 
 resource "google_storage_transfer_job" "transfer_job" {
-  description = "My Transfer Job"
+  description = "My Transfer Job for GCS to GCS,"
   project     = var.config.gcp_project_id
   status      = "ENABLED"
 
